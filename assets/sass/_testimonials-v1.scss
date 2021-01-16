@@ -1,0 +1,76 @@
+.testimonials-v1 {
+    &__item {
+        margin: 2.5rem 0;
+        padding: 2.5rem 6.25rem;
+        background: #fff;
+        border-radius: 10px;
+        position: relative;
+        outline: none;
+
+        &::before {
+            content: '\f10e';
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            opacity: 0.8;
+            color: $primary-color;
+            font-weight: 900;
+            font-size: 3.125rem;
+            transform: rotateX(180deg) translate(-50%, 50%);
+        }
+
+        @media (max-width: 768px) {
+            padding: 2.5rem 0rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        h4 {
+            font-size: 0.875rem;
+        }
+    }
+    .slick-arrow {
+        position: absolute !important;
+        left: 50% !important;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-backface-visibility: hidden;
+        bottom: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: #555;
+        border: 1px solid #555;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    .slick-arrow:hover {
+        background-color: $primary-color;
+        color: #fff;
+        border: 1px solid $primary-color;
+    }
+    .slick-arrow .fas {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        vertical-align: top;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .user-prev,
+    .slick-testimonials1 .user-prev {
+        z-index: 10;
+    }
+    .slick-arrow.user-prev {
+        margin-left: -25px;
+    }
+    .slick-arrow.user-next {
+        margin-left: 25px;
+    }
+}

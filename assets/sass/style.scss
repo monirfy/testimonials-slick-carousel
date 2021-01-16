@@ -1,0 +1,20 @@
+// Variables
+$primary-color: #e81c62;
+
+// Text Color
+.m-text-primary {
+    color: $primary-color;
+}
+.m-py-75 {
+    padding-top: 5.35714rem;
+    padding-bottom: 5.35714rem;
+}
+.m-py-100 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+section {
+    border-top: 1px solid #eee;
+}
+// Testimonials 01
+@import 'testimonials-v1';
